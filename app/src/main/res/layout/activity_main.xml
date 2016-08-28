@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Module.MainActivity">
+<android.support.v4.view.ViewPager
+    android:id="@+id/main_activity_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/main_activity_RG"/>
+
+    <RadioGroup
+        android:id="@id/main_activity_RG"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical"
+       >
+            <RadioButton
+                android:id="@+id/main_activity_activity_RB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/main_activity_activity_selector"
+                />
+            <RadioButton
+                android:id="@+id/main_activity_search_RB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/main_activity_search_selector"
+                />
+            <RadioButton
+                android:id="@+id/main_activity_assistant_RB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/main_activity_assistant_selector"
+                />
+            <RadioButton
+                android:id="@+id/main_activity_aboutme_RB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                android:button="@null"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/main_activity_aboutme_selector"
+                android:layout_marginRight="20dp"
+                />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A5A9AF"
+        android:layout_above="@id/main_activity_RG"
+
+        />
+
+</RelativeLayout>

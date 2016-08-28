@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:paddingTop="10dp">
+        <Button
+            android:id="@+id/search_fragment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="武汉"
+            android:background="#F8F8F8"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/ic_down"/>
+        <EditText
+            android:id="@+id/search_fragment_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="搜索活动或地点"
+            android:drawableLeft="@drawable/ic_nav_search"
+            android:layout_alignBottom="@id/search_fragment_btn"
+            android:layout_toRightOf="@id/search_fragment_btn"
+            android:layout_marginLeft="10dp"
+           />
+    </RelativeLayout>
+<GridView
+    android:id="@+id/search_fragment_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:numColumns="2"
+    />
+
+</LinearLayout>

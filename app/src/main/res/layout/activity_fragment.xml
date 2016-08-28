@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="懒人周末"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A5A9AF"/>
+    <ListView
+        android:id="@+id/activity_fragment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/activity_fragment_listview_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="您的附近暂时还没有活动呢。。。"
+        android:gravity="center"/>
+
+
+</LinearLayout>
